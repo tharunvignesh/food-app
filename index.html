@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Food Ordering App</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar">
+			<h2>Food Corner🍔</h2>
+			<button onclick="favoriteFoods()">Show favorites ❤</button>
+		</nav>
+		<div class="first-div">
+			<label>Choose By </label>
+			<select id="sort" name="choose">
+				<option value="Rating">Rating</option>
+				<option value="ETA">ETA</option>
+			</select>
+			<select id="type">
+				<option value="healthy">Healthy</option>
+				<option value="veg">Veg</option>
+				<option value="american">American</option>
+				<option value="fastfood">Fast Food</option>
+				<option value="northfood">North Food</option>
+				<option value="southindianfood">South Indian Food</option>
+			</select>
+			<input id="search-bar" type="text" placeholder="Search" />
+		</div>
+
+		<main class="cards" id="cards"></main>
+		<script src="./app.js"></script>
+	</body>
+</html>
